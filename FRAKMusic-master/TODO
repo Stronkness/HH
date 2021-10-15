@@ -1,0 +1,18 @@
+X = Done
+-------------
+
+Make a playlist
+autoplay
+add music // fredrik 
+play music -- import
+stop music --  import
+next music // Andre
+queue // Andre
+compare hasttabell // Andre
+Create hasttabell // fredrik
+
+
+
+ANDRE:
+gör så att hashtabellen jämför alla 4 olika fall och lägger in i vars en nod.
+Använd split och lägg in i array? se compareFiles eller USA uppgift från grundkursen.
