@@ -1,0 +1,3 @@
+Project 4 codes created by André Frisk & Linnéa Olsson.
+
+Use the program Main and use the filters implemented.

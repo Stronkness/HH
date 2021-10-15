@@ -1,0 +1,15 @@
+Projekt 1
+
+Del 1:
+(a) Är 100 ett sådant tal?
+- nej, 100 är inte ett sådant tal, det sista talet i talföljden som är ett mycket sammansatt tal är 60.
+(b) Vilka är alla sådana tal upp till 100?
+4 1
+6 2
+12 4
+24 6
+36 7
+48 8
+60 10
+(c) Vilket är det första mycket sammansatta talet större än 100?
+- 120 14

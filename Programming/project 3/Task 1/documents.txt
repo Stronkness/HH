@@ -1,0 +1,8 @@
+Constitution.txt
+TomSawyer.txt
+HuckFin.txt
+Prejudice.txt
+DJIA.csv
+Amazon.html
+ATCG.txt
+Picture.java

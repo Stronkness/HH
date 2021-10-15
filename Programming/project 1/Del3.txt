@@ -1,0 +1,17 @@
+Del 3 (Gambler):
+a) Vad står de olika kommandoradsargumenten för?
+- Din satsning (hur mycket pengar du lägger ner på rundan).
+- Målet (goal), med andra ord antal $cash programmet ska försöka få utan att få $0.
+- Trials, antal försök på dig att nå ditt mål. Om du når ditt mål, får $0 eller når
+  1000 försök så stoppas programmet.
+Exempel java Gambler 10 20 1000
+Du satsar $10, ditt mål är att vinna/komma upp till $20 och du har 1000 försök på dig
+att lyckas med detta.
+
+b) Du lägger en satsning (stake, första kommandoraden) och ditt mål (goal) är att få ut det andra
+ avgivna talet i kommandoraden, i första exemplet är det runt 50% chans att du vinner eller förlorar då det är
+det dubbla av varandra (stake & goal), annorlunda på de två andra exemplena. Det sista i kommandoraden är trials
+är antal försök som programmet ska köra detta bet, som i exempel 1 är det 1000 gånger
+
+c) Det beror på vad du skriver in som args[2], i exempel 1 körs det 1000 gånger, medans i de andra två
+körs det 100 gånger.

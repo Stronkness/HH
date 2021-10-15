@@ -1,0 +1,8 @@
+Del 1 Uppgift 4:
+
+Man sätter ett värde där bollarna ska studsa tillbaka, där bollarna helt enkelt byter riktning.
+Det blir som ett litet skal innanför fönstret där de studsar. Om någon boll "spawns" utanför
+detta skal så kommer bollen att stutsa mellan fönstret och skalet och kan med andra ord
+inte studsa ut till alla de andra bollarna. De studsar mellan det lilla mellanrummet.
+
+Se bild i zip filen för ökad förståelse kring förklaringen.
