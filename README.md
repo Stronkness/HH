@@ -1,2 +1,2 @@
 # HH
-Material, labs and projects from my studies at Lunds Tekniska Högskola
+Material, labs and projects from my 2 years at Halmstad Högskola
