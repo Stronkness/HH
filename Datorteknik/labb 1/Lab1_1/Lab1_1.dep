@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>430664575</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
+      <file>$PROJ_DIR$\asm.s</file>
+      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
+      <file>$PROJ_DIR$\startup_sam3x.s</file>
+      <file>$TOOLKIT_DIR$\config\linker\Atmel\SAM3X\SAM3X-EK\sam3x8-sram.icf</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asm.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 5 0 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_sam3x.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
