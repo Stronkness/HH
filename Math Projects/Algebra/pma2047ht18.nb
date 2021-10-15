@@ -1,0 +1,2124 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     85603,       2116]
+NotebookOptionsPosition[     46330,       1372]
+NotebookOutlinePosition[     75445,       1934]
+CellTagsIndexPosition[     75402,       1931]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Projektuppgift 1", "Title",
+ CellChangeTimes->{{3.747030475553845*^9, 3.7470304859736977`*^9}, {
+  3.747030678475301*^9, 3.747030700430417*^9}, {3.747030831406721*^9, 
+  3.747030833999045*^9}, {3.747289867366954*^9, 3.747289879310554*^9}, {
+  3.749456383164494*^9, 
+  3.749456394765122*^9}},ExpressionUUID->"7e33efbb-55a7-4ce1-aea7-\
+3c236b912ae4"],
+
+Cell["MA2047 Algebra och diskret matematik HT18", "Subtitle",
+ CellChangeTimes->{{3.747033697987858*^9, 3.7470337303531027`*^9}, {
+  3.747037087644758*^9, 
+  3.74703710491679*^9}},ExpressionUUID->"6138bb78-f752-4811-af81-\
+4a688c06f081"],
+
+Cell[CellGroupData[{
+
+Cell["Team 9", "Section",
+ CellChangeTimes->{{3.74703048796684*^9, 3.747030492829979*^9}, {
+  3.747030690398499*^9, 3.747030732630455*^9}, {3.747032580084775*^9, 
+  3.747032589780752*^9}, {3.74927466028741*^9, 
+  3.749274660504841*^9}},ExpressionUUID->"5a836fc7-f600-462e-a1eb-\
+afb5f0822523"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Linn\[EAcute]a Olsson", "Item"]], "Item",
+ CellChangeTimes->{{3.747030499311082*^9, 3.747030553840805*^9}, {
+  3.747030721214575*^9, 3.747030742267906*^9}, {3.7470310581279573`*^9, 
+  3.7470310627997828`*^9}, {3.747031093472101*^9, 3.747031093715425*^9}, {
+  3.7492746927832727`*^9, 
+  3.749274698649138*^9}},ExpressionUUID->"1e05dd8c-a3ff-4902-bdcf-\
+2adba878a828"],
+
+Cell[TextData[StyleBox["Andr\[EAcute] Frisk", "Item"]], "Item",
+ CellChangeTimes->{{3.747030499311082*^9, 3.747030553840805*^9}, {
+   3.747030721214575*^9, 3.747030742267906*^9}, {3.7470310581279573`*^9, 
+   3.7470310627997828`*^9}, {3.747031093472101*^9, 3.74703109586401*^9}, 
+   3.747032857990181*^9, {3.749274743395022*^9, 3.7492747504360247`*^9}, {
+   3.74945641286208*^9, 3.749456417284639*^9}, {3.749491035790947*^9, 
+   3.749491037955099*^9}},ExpressionUUID->"1ac97144-3d7a-4890-a9f7-\
+7937bc8abd28"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Uppgift 1", "Section",
+ CellChangeTimes->{{3.74703055785647*^9, 3.747030559334161*^9}, 
+   3.747030750449839*^9, {3.747033117054831*^9, 3.747033120078979*^9}, {
+   3.749447662624621*^9, 
+   3.7494476678652554`*^9}},ExpressionUUID->"3d181e42-856e-4ab3-83af-\
+ee9bf6f83a7b"],
+
+Cell[CellGroupData[{
+
+Cell["Problem", "Subsection",
+ CellChangeTimes->{{3.74703226303858*^9, 
+  3.747032274805648*^9}},ExpressionUUID->"b07772ca-d953-4da1-bc4a-\
+c13d93f6754a"],
+
+Cell[TextData[{
+ "Anv\[ADoubleDot]nd Eulers sats f\[ODoubleDot]r att ber\[ADoubleDot]kna ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "82"], TraditionalForm]],ExpressionUUID->
+  "4537bb3a-3d5d-48e6-bb8b-2657cf33298b"],
+ " mod 100 f\[ODoubleDot]r hand. Du kan best\[ADoubleDot]mma \[CurlyPhi](n) f\
+\[ODoubleDot]r l\[ADoubleDot]mpligt n\nmed hj\[ADoubleDot]lp av \
+Mathematicafunktionen EulerPhi. Kontrollera ditt svar med PowerMod."
+}], "Text",
+ CellChangeTimes->{{3.747030617872383*^9, 3.7470306296063337`*^9}, 
+   3.747030759540251*^9, {3.747030891390872*^9, 3.747030896303115*^9}, {
+   3.747031116472066*^9, 3.747031124671997*^9}, {3.747031233798025*^9, 
+   3.747031245417848*^9}, {3.747031280617805*^9, 3.7470312917288303`*^9}, {
+   3.747031342177093*^9, 3.747031468810075*^9}, {3.7470316866171618`*^9, 
+   3.74703176329915*^9}, {3.7470318700832376`*^9, 3.74703198826747*^9}, {
+   3.747032257964365*^9, 3.747032261372403*^9}, {3.747032328652577*^9, 
+   3.747032329924591*^9}, {3.7470332924715967`*^9, 3.7470332929600897`*^9}, {
+   3.7470333307599173`*^9, 3.7470333313919897`*^9}, {3.747033645817168*^9, 
+   3.7470336729371767`*^9}, {3.747034031016487*^9, 3.7470340543225813`*^9}, {
+   3.747034258315156*^9, 3.74703428140324*^9}, {3.747285246039941*^9, 
+   3.747285264520411*^9}, 3.7472884333263702`*^9, 3.7472893827549686`*^9, {
+   3.747289417722548*^9, 3.7472894213249607`*^9}, 3.747289772683762*^9, {
+   3.749274830340273*^9, 3.749274871645797*^9}, {3.749274947918951*^9, 
+   3.749274952967544*^9}, {3.74936534388931*^9, 
+   3.749365347897338*^9}},ExpressionUUID->"bbdfb257-1e3c-4c23-ad0e-\
+955da170af6b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ODoubleDot]sning", "Subsection",
+ CellChangeTimes->{{3.747032297470408*^9, 3.7470323034220133`*^9}, {
+  3.749364002038988*^9, 3.7493640041397467`*^9}, {3.749364048574185*^9, 
+  3.749364048575478*^9}, {3.749364118853922*^9, 3.749364119257452*^9}, {
+  3.749364168172378*^9, 
+  3.749364179705611*^9}},ExpressionUUID->"02c89abc-85e4-401b-99a2-\
+72007dd69467"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EulerPhi", "[", "100", "]"}]], "Code",
+ CellChangeTimes->{{3.749364840081229*^9, 3.749364848981786*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1432f5eb-5c39-4e4f-a7af-c701acbbdfd6"],
+
+Cell[BoxData["40"], "Output",
+ CellChangeTimes->{{3.74936485570265*^9, 3.749364855910713*^9}, 
+   3.749462311658683*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"fe7a141e-740f-4e94-a6ed-e10dd39275b4"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Eulers sats: \n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["a", 
+    RowBox[{"\[Phi]", "(", "n", ")"}]], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "f4fbeae6-40d7-476e-a523-2d51197f3ecd"],
+ "\[Congruent]  1 mod(n)\nI v\[ARing]rt fall \[ADoubleDot]r Eulers sats: \n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", 
+    RowBox[{"\[Phi]", "(", "100", ")"}]], TraditionalForm]],ExpressionUUID->
+  "d7fb79e6-395b-4f4f-93e9-0c5be982d5d1"],
+ " =  ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["7", "40"], " ", "\[Congruent]", " ", 
+    RowBox[{"1", " ", 
+     RowBox[{"(", 
+      RowBox[{"mod", " ", "100"}], ")"}], " "}]}], TraditionalForm]],
+  ExpressionUUID->"d53f2637-c2b1-4c5e-a9ee-5eeb9322434d"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "82"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "25758ce1-77a3-419a-822d-ce4c94986094"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "40"], TraditionalForm]],ExpressionUUID->
+  "8d96167f-3651-4222-b42d-6e6366a34e9c"],
+ "*",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "40"], TraditionalForm]],ExpressionUUID->
+  "97b3bef8-cca9-4686-8cb0-24a82a153d4b"],
+ "*",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "2"], TraditionalForm]],ExpressionUUID->
+  "c21c429c-90ff-482b-959d-abc35c3a1c0e"],
+ "\[Congruent] 1*1*",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "2"], TraditionalForm]],ExpressionUUID->
+  "9f9e1a7f-45a4-4d94-8ac0-8717280c0d80"],
+ "\[Congruent] 49 mod (100)\n\nSvar: ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "82"], TraditionalForm]],ExpressionUUID->
+  "1569963d-b028-42fe-b5d0-7ec5a236e6fc"],
+ " mod (100) = 49"
+}], "Text",
+ CellChangeTimes->{{3.749364981798868*^9, 3.749364991915559*^9}, {
+  3.749365457277864*^9, 3.74936551423464*^9}, {3.749365557274953*^9, 
+  3.749365586881755*^9}, {3.749365722680992*^9, 3.749365723548908*^9}, {
+  3.749446935654121*^9, 3.7494469361524363`*^9}, {3.7494471788381433`*^9, 
+  3.749447179764009*^9}, {3.7494472348391647`*^9, 3.749447425480898*^9}, {
+  3.749447470988472*^9, 
+  3.749447555283455*^9}},ExpressionUUID->"6e356026-bc69-4aba-a941-\
+894c1df42edd"],
+
+Cell[CellGroupData[{
+
+Cell["Mathematicakod", "Subsubsection",
+ CellChangeTimes->{{3.747030638455546*^9, 3.747030668030706*^9}, {
+   3.747030778375042*^9, 3.747030813990893*^9}, {3.74703091182331*^9, 
+   3.7470309139032097`*^9}, {3.74703115314412*^9, 3.74703115593629*^9}, {
+   3.747032012181734*^9, 3.7470320144590807`*^9}, 3.747032233954157*^9, {
+   3.747033780193178*^9, 3.747033785257148*^9}, {3.7494475774317837`*^9, 
+   3.7494475786823273`*^9}},ExpressionUUID->"e9bafe98-1b98-41e6-9de8-\
+dd7016b842ea"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PowerMod", "[", 
+  RowBox[{"7", ",", "82", ",", "100"}], "]"}]], "Input",
+ CellChangeTimes->{{3.749447594892323*^9, 3.749447633228043*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"1360d3ac-5ec1-41c2-8e5b-af76a4666c60"],
+
+Cell[BoxData["49"], "Output",
+ CellChangeTimes->{3.749447636155322*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"f3a5c692-1eab-4616-b63f-37db03302767"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Uppgift 2", "Section",
+ CellChangeTimes->{{3.749447701734542*^9, 
+  3.749447704873287*^9}},ExpressionUUID->"ee058cfd-c40b-4763-8d07-\
+7a35575b7b25"],
+
+Cell[CellGroupData[{
+
+Cell["Problem", "Subsection",
+ CellChangeTimes->{{3.7494477202697887`*^9, 3.749447723637431*^9}, {
+  3.749447778537027*^9, 
+  3.749447781315473*^9}},ExpressionUUID->"2e133c2a-5799-49c9-9811-\
+6352d5a3de73"],
+
+Cell["\<\
+Ber\[ADoubleDot]kna 57229 mod 713 med hj\[ADoubleDot]lp av \
+\[OpenCurlyDoubleQuote]kvadreringsmetoden\[CloseCurlyDoubleQuote] ovan.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7494478520614634`*^9},ExpressionUUID->"2ec265a9-a4e6-49d3-9dd6-\
+9b7cad8ca146"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ODoubleDot]sning", "Subsection",
+ CellChangeTimes->{{3.749447900161439*^9, 
+  3.749447901404969*^9}},ExpressionUUID->"aee5c91e-8771-4061-ad36-\
+466d9110806d"],
+
+Cell[TextData[{
+ "29 = 16 + 8 + 4 +1\n\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "29"], TraditionalForm]],ExpressionUUID->
+  "1298bc0c-c663-4faf-be7d-bfc0466c6919"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "16"], TraditionalForm]],ExpressionUUID->
+  "fcef4ea8-0dfc-4747-b39e-875ff1a1c1f4"],
+ "+ ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "8"], TraditionalForm]],ExpressionUUID->
+  "d636a41a-3ac8-4140-86d4-8e9f261ab200"],
+ "+ ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "4"], TraditionalForm]],ExpressionUUID->
+  "84d96473-cbff-47be-a94a-c35c82694060"],
+ "+ ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "1"], TraditionalForm]],ExpressionUUID->
+  "a7389879-62a5-4ab7-abd1-de6e63ba8ed5"],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "1"], TraditionalForm]],ExpressionUUID->
+  "b3745f22-258b-481a-8416-c1fbe2594935"],
+ " \[Congruent] 572 mod (713)\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", 
+    RowBox[{"2", " "}]], TraditionalForm]],ExpressionUUID->
+  "0f2ccaeb-fd85-420d-91af-7107abce4736"],
+ "= 327184 \[Congruent] 630 (mod713)\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "4"], TraditionalForm]],ExpressionUUID->
+  "96a0acb3-4141-43c1-836a-9f0c73d9897a"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"(", 
+     SuperscriptBox["572", "2"], ")"}], "2"], TraditionalForm]],
+  ExpressionUUID->"45a4d509-d28c-405d-9356-13ce58a941e1"],
+ " \[Congruent] ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["630", "2"], TraditionalForm]],ExpressionUUID->
+  "9f0bd89a-b64b-4ab1-b293-2d436320a3c9"],
+ " = 396900 \[Congruent] 472 mod (713)\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", 
+    RowBox[{"8", " "}]], TraditionalForm]],ExpressionUUID->
+  "72f0e1c1-828e-4a00-a44d-2f281a7b16e4"],
+ "= ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"(", 
+     SuperscriptBox["572", "4"], ")"}], "2"], TraditionalForm]],
+  ExpressionUUID->"fefc410c-69ce-46a6-ad4d-d2b21c0e8a00"],
+ " \[Congruent] ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["472", "2"], TraditionalForm]],ExpressionUUID->
+  "228a76b7-10c6-4e5c-b039-37b8d0483572"],
+ "= 222784 \[Congruent] 328 mod (713)\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "16"], TraditionalForm]],ExpressionUUID->
+  "d07a27b9-206e-4150-949f-4b9c5bded4e0"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"(", 
+     SuperscriptBox["572", "8"], ")"}], "2"], TraditionalForm]],
+  ExpressionUUID->"aa9f053c-3d62-4792-bd07-9f2f37ab7087"],
+ " \[Congruent] ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["328", "2"], TraditionalForm]],ExpressionUUID->
+  "81f67dd2-6902-4f00-81da-ba4eb5d7602c"],
+ "= 107584 \[Congruent] 634 mod (713)\n\nAllts\[ARing]:\n ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "29"], TraditionalForm]],ExpressionUUID->
+  "e9b60fe5-a2d9-43a2-8212-6e52821b7fcb"],
+ " = 572 * ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "4"], TraditionalForm]],ExpressionUUID->
+  "887abdfe-289a-484a-b33f-26d6bcd5b3ec"],
+ " * ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", 
+    RowBox[{"8", " "}]], TraditionalForm]],ExpressionUUID->
+  "d774d8a8-8efb-426c-9070-e969c85b7d38"],
+ " * ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["572", "16"], TraditionalForm]],ExpressionUUID->
+  "910a0867-2f9f-4ebf-b7df-0d379de0f75d"],
+ "= 572 * 472 * 328 * 634 = 269 984 * 207 952 \[Congruent] 113 mod (713)"
+}], "Text",
+ CellChangeTimes->{{3.7494479842410173`*^9, 3.749448216766428*^9}, {
+  3.749448339271072*^9, 3.7494485119762087`*^9}, {3.7494485434412823`*^9, 
+  3.749448974411787*^9}, {3.749449020671748*^9, 3.749449027451618*^9}, {
+  3.749449063171711*^9, 3.7494490846433573`*^9}, {3.7494491250282593`*^9, 
+  3.7494491322395153`*^9}, {3.7494630621446533`*^9, 
+  3.749463071175096*^9}},ExpressionUUID->"9fc5d5af-f134-4269-8a32-\
+0085ac888fbc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Matematicakod", "Subsection",
+ CellChangeTimes->{{3.7494491543591137`*^9, 
+  3.749449163175726*^9}},ExpressionUUID->"7a95be2a-301c-4663-9d8b-\
+9e4971f2aaa8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PowerMod", "[", 
+  RowBox[{"572", ",", "29", ",", "713"}], "]"}]], "Input",
+ CellChangeTimes->{{3.749449179646315*^9, 3.749449213817113*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"f0a2da8e-61ff-40a2-8291-96adfca392b9"],
+
+Cell[BoxData["113"], "Output",
+ CellChangeTimes->{3.74944921525194*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"a74ad3a3-5f75-41ef-8b36-8b2060b60141"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Uppgift 3", "Section",
+ CellChangeTimes->{{3.74944923453104*^9, 
+  3.7494492366898537`*^9}},ExpressionUUID->"238adfc1-144b-4443-b311-\
+08fd1333f06a"],
+
+Cell[CellGroupData[{
+
+Cell["Problem", "Subsection",
+ CellChangeTimes->{{3.749449251482636*^9, 
+  3.749449252678505*^9}},ExpressionUUID->"19f9c3be-ea8a-4e32-9b4c-\
+75eaee6f0467"],
+
+Cell["\<\
+Best\[ADoubleDot]m primtalen p och q om n = pq = 39247771 och \[CurlyPhi](n) \
+= 39 233 944.\
+\>", "Text",
+ CellChangeTimes->{{3.7494492926874104`*^9, 3.749449297131714*^9}, {
+  3.749453651786821*^9, 
+  3.749453653161895*^9}},ExpressionUUID->"732d2500-8110-4523-9d7c-\
+0ea366a4e6a0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ODoubleDot]sning", "Subsection",
+ CellChangeTimes->{{3.749449331566283*^9, 
+  3.749449333391878*^9}},ExpressionUUID->"f0594f94-0fdb-433d-809b-\
+46e5c04aa5a4"],
+
+Cell[TextData[{
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    StyleBox[
+     RowBox[{"{", 
+      StyleBox[GridBox[{
+         {
+          RowBox[{
+           RowBox[{"\[Phi]", "(", "n", ")"}], " ", "=", 
+           RowBox[{
+            RowBox[{"\[Phi]", "(", "pq", ")"}], "=", " ", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"\[Phi]", "(", "p", ")"}], "*", 
+              RowBox[{"\[Phi]", "(", "q", ")"}]}], " ", "=", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"p", "-", "1"}], ")"}], 
+               RowBox[{"(", 
+                RowBox[{"q", "-", "1"}], ")"}]}], " ", "=", " ", "39233944", 
+              "  "}]}]}]}]},
+         {
+          RowBox[{"n", " ", "=", " ", 
+           RowBox[{"pq", " ", "=", " ", "39247771"}]}]}
+        }],
+       ShowAutoStyles->True]}],
+     ShowAutoStyles->False],
+    #& ], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "7d3624ed-157a-4c71-956f-8bcc8d0a3f6b"],
+ "\n\nn - \[Phi](n) = pq - ((p-1)(q-1)) = 39247771 - 39233944 \n\
+\[DoubleLeftRightArrow] pq - pq + p + q - 1 = 13827\n\[DoubleLeftRightArrow] \
+p + q = 13828\n\n",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    StyleBox[
+     RowBox[{"{", 
+      StyleBox[GridBox[{
+         {
+          RowBox[{"pq", "=", " ", 
+           RowBox[{
+            RowBox[{"39247771", " ", "\[DoubleLeftRightArrow]", " ", "p"}], 
+            " ", "=", " ", 
+            FractionBox["39247771", "q"], "  "}]}]},
+         {
+          RowBox[{
+           RowBox[{"p", " ", "+", " ", "q"}], " ", "=", " ", "13828"}]}
+        }],
+       ShowAutoStyles->True]}],
+     ShowAutoStyles->False],
+    #& ], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "54932a09-d988-4dba-a59b-bdb54808066f"],
+ "\n\n p + q  = 13828 \[DoubleLeftRightArrow] q + ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["39247771", "q"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "87264a96-b247-48d3-9019-6bc712fb6e3a"],
+ " = 13828\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["q", "2"], "+", "39247771"}], "=", 
+    RowBox[{"13828", " ", "q"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "a8a817bb-97d3-4431-bba3-2c269571a630"],
+ "\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["q", "2"], " ", "-", " ", 
+     RowBox[{"13828", " ", "q"}], " ", "+", " ", "39247771"}], " ", "=", " ", 
+    "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "173850fc-8331-43b8-8c8c-ef1bb1564206"],
+ "\n\[DoubleLeftRightArrow] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"q", " ", "=", " ", 
+    RowBox[{"6914", " ", "\[PlusMinus]", " ", 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox["6914", "2"], " ", "-", " ", "39247771"}]]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b8d955d5-d30c-4605-9d60-8f2698fa1e36"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"6914", " ", "\[PlusMinus]", " ", 
+    SqrtBox["8555625"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "2536f3c7-6c3e-4f31-b08b-d4745615bc75"],
+ "= 6914 \[PlusMinus] 2925\n\[DoubleLeftRightArrow] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["q", "1"], " ", "=", " ", "3989"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6ce75f40-bb46-4a81-b132-7bb87d6cf373"],
+ " samt ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["q", "2"], "=", " ", "9839"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c3aa0f1b-a9b5-46da-ac3a-232b079114c1"],
+ "\n\[DoubleLeftRightArrow] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["p", "1"], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"13828", " ", "-", " ", "3989"}], " ", "=", " ", "9839"}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "5e5447ca-9afc-4641-95b0-587585164adc"],
+ " samt ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["p", "2"], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"13828", " ", "-", " ", "9839"}], " ", "=", " ", "3989"}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "11d8b503-44d3-484d-9e1e-649575ed5eeb"]
+}], "Text",
+ CellChangeTimes->{{3.749449395297467*^9, 3.749449421696245*^9}, {
+  3.749450285758914*^9, 3.749450309573896*^9}, {3.7494535213798532`*^9, 
+  3.749453527167281*^9}, {3.749453562270249*^9, 3.749453712116375*^9}, {
+  3.749453742264907*^9, 3.7494538228075943`*^9}, {3.749453869234273*^9, 
+  3.749453965448138*^9}, {3.749454094281601*^9, 3.749454172022458*^9}, {
+  3.749454255627931*^9, 3.749454554690061*^9}, {3.74945459119837*^9, 
+  3.749454910277491*^9}, {3.749454972567073*^9, 3.749455129292973*^9}, {
+  3.7494551766667433`*^9, 3.7494554193359756`*^9}, {3.749455464321743*^9, 
+  3.74945549339395*^9}},ExpressionUUID->"55655a08-5be5-42bf-be5a-\
+c8b70175173f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Svar", "Subsection",
+ CellChangeTimes->{{3.7494558140529423`*^9, 
+  3.7494558161014977`*^9}},ExpressionUUID->"27cfa466-23f2-40a3-ac79-\
+33f6304fd92c"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["q", "1"], "=", "3989"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "1568c394-3cdc-475e-83c8-71a9fad83d3e"],
+ "\noch\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["q", "2"], "=", " ", "9839"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "b48a7bef-f7cc-4f83-94c2-6afe16a24f76"]
+}], "Text",
+ CellChangeTimes->{{3.749455836019717*^9, 3.7494558616585407`*^9}, {
+  3.7494559399591417`*^9, 
+  3.749455952774137*^9}},ExpressionUUID->"a6ec934a-5f1b-41d4-9f75-\
+89a04a20261b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Matematicakod", "Subsection",
+ CellChangeTimes->{{3.7494555136840467`*^9, 3.7494555208324213`*^9}, {
+  3.749455818405176*^9, 
+  3.7494558226143513`*^9}},ExpressionUUID->"9e16d57c-2309-42d6-b7a7-\
+af37ceb67e5b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "*", "y"}], " ", "\[Equal]", " ", "39247771"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "-", "1"}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"y", "-", "1"}], ")"}]}], "\[Equal]", "39233944"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.749455530092484*^9, 3.749455569927102*^9}, {
+  3.749455604065543*^9, 3.7494556498648577`*^9}, {3.749455694469268*^9, 
+  3.7494557654449453`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"f92c32df-e462-4a5c-b469-fc4906ed0fbd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Rule]", "3989"}], ",", 
+     RowBox[{"y", "\[Rule]", "9839"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Rule]", "9839"}], ",", 
+     RowBox[{"y", "\[Rule]", "3989"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.749455770119791*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"b469ead5-e196-4d44-99fe-dbd6f0326441"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Uppgift 4 ", "Section",
+ CellChangeTimes->{{3.749455971611321*^9, 
+  3.749455973982649*^9}},ExpressionUUID->"7bf82bdd-4ec8-4682-ba5f-\
+9fe81976e6b4"],
+
+Cell[CellGroupData[{
+
+Cell["Problem", "Subsection",
+ CellChangeTimes->{{3.7494560846879673`*^9, 
+  3.7494560865132227`*^9}},ExpressionUUID->"7b10f105-eb59-422d-af6b-\
+5d5d60453920"],
+
+Cell[TextData[{
+ "(1)F\[ODoubleDot]r heltalen a och b g\[ADoubleDot]ller att b \[Congruent] a \
+(mod 91) och sgd(a, 91) = 1. Best\[ADoubleDot]m ett positivt tal k > 1 s\
+\[ARing]dant att ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["b", "k"], TraditionalForm]],ExpressionUUID->
+  "58c99880-a02c-48de-b118-679c4f336357"],
+ " \[Congruent] a (mod 91). (2) Vad \[ADoubleDot]r a mod 91 om b = 53?"
+}], "Text",
+ CellChangeTimes->{{3.749456126879415*^9, 3.749456134528386*^9}, {
+  3.749457667924658*^9, 3.7494576772866592`*^9}, {3.749482984256703*^9, 
+  3.74948299300025*^9}},ExpressionUUID->"728b468b-6c6a-44c4-8097-\
+ae4835b37df1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ODoubleDot]sning", "Subsection",
+ CellChangeTimes->{{3.749463272880129*^9, 
+  3.7494632743927317`*^9}},ExpressionUUID->"5fdcf520-bf46-4be2-89ec-\
+c871dff29f81"],
+
+Cell[CellGroupData[{
+
+Cell["1.", "Subsubsection",
+ CellChangeTimes->{{3.749463734982662*^9, 
+  3.749463735083054*^9}},ExpressionUUID->"374c8739-e10f-4b2e-8b7f-\
+66f9a319e245"],
+
+Cell[TextData[{
+ "Eulers sats:\nOm a, n \[Element] Z, n \[GreaterEqual] 2 och sgd(a, n) = 1 s\
+\[ARing] \[ADoubleDot]r ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["a", 
+    RowBox[{"\[Phi]", "(", "n", ")"}]], TraditionalForm]],ExpressionUUID->
+  "98616c53-13e8-4bea-b5ec-1f1ac11746e5"],
+ " \[Congruent] 1 (mod n).\n\nk ska vara st\[ODoubleDot]rre \[ADoubleDot]n 1. \
+Ekvationen \[ADoubleDot]r f\[ODoubleDot]ljande:\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["b", "k"], TraditionalForm]],ExpressionUUID->
+  "07d1bac9-84f6-4f22-be0c-177f5d9ce6b8"],
+ " \[Congruent] a (mod 91)\n\nD\[ARing] a och b \[ADoubleDot]r kongruenta med \
+varandra vid Modulus 91 kan man bryta ut ett b ur ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["b", "k"], TraditionalForm]],ExpressionUUID->
+  "a829948b-242e-40d1-9923-d5f9fd1fdaa6"],
+ " f\[ODoubleDot]r att f\[ARing] bort a fr\[ARing]n ekvationen.\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    SuperscriptBox["b", "k"], 
+    RowBox[{"-", "1"}]], TraditionalForm]],ExpressionUUID->
+  "a8f8cccc-5298-406e-bcb3-c37ccf28b30f"],
+ " * b \[Congruent] a (mod 91)\n\nL\[ADoubleDot]gg till 1 framf\[ODoubleDot]r \
+a s\[ARing] h\[ODoubleDot]gerledet ej blir tomt.\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    SuperscriptBox["b", "k"], 
+    RowBox[{"-", "1"}]], TraditionalForm]],ExpressionUUID->
+  "eba2f9ff-9c2c-4323-b4e7-0f2e6f517260"],
+ " * b \[Congruent] 1a (mod 91)\n\nD\[ARing] a och b \[ADoubleDot]r \
+kongruenta tar vi bort de fr\[ARing]n ekvationen:\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    SuperscriptBox["b", "k"], 
+    RowBox[{"-", "1"}]], TraditionalForm]],ExpressionUUID->
+  "f1d3100b-e0e8-4513-9e55-109cfda3e13f"],
+ " \[Congruent] 1 (mod 91)\n\nEnligt Eulers sats: ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["a", 
+    RowBox[{"k", " "}]], TraditionalForm]],ExpressionUUID->
+  "cb54063a-18aa-45d7-9dcc-1b1940c39695"],
+ "= ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["a", 
+    RowBox[{"\[CurlyPhi]", "(", "n", ")"}]], TraditionalForm]],
+  ExpressionUUID->"100b2c7b-5e6d-472c-acde-9e5ea29affd9"],
+ " kan man skriva om uttrycket f\[ODoubleDot]r ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],ExpressionUUID->
+  "36b52dda-06e3-4d74-b78e-f0930791d49e"],
+ ":\nk-1 = \[Phi](91)\n\nD\[ARing] \[Phi](91) \[ADoubleDot]r 72 kan man \
+skriva om det till:\nk-1 = 72\[LineSeparator]\nk = 73"
+}], "Text",
+ CellChangeTimes->{{3.749463348092288*^9, 3.749463376120278*^9}, {
+   3.7494634133206587`*^9, 3.749463518552865*^9}, {3.749463588985623*^9, 
+   3.749463602792316*^9}, 3.749463657438573*^9, {3.7494636995794086`*^9, 
+   3.749463712460243*^9}, {3.7494637524276457`*^9, 
+   3.7494637541329823`*^9}},ExpressionUUID->"7b9d3865-1b4f-47be-98f1-\
+af3285786f3d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Matematicakod", "Subsection",
+ CellChangeTimes->{{3.749463901681233*^9, 
+  3.7494639045588217`*^9}},ExpressionUUID->"177070d3-c967-4fcb-ab81-\
+ceb62b5cf71e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EulerPhi", "[", "91", "]"}]], "Code",
+ CellChangeTimes->{{3.749463906629322*^9, 3.7494639159892883`*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"e9ddb4bf-08ea-4e13-b407-118028e5bcb4"],
+
+Cell[BoxData["72"], "Output",
+ CellChangeTimes->{3.7494639169393177`*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"358ac79f-b74e-4cc0-a162-8ed05e2afc1e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2.", "Subsubsection",
+ CellChangeTimes->{{3.749463767714801*^9, 
+  3.749463767864916*^9}},ExpressionUUID->"7b9d29cc-33e6-43d4-93a0-\
+ecc0fada93fb"],
+
+Cell["\<\
+Vad \[ADoubleDot]r a mod 91 om b = 53?
+D\[ARing] a och b \[ADoubleDot]r kongruenta \[ADoubleDot]r svaret:
+a = 53\
+\>", "Text",
+ CellChangeTimes->{
+  3.7494637744443398`*^9},ExpressionUUID->"bdbd4d89-b3d2-4bc9-894d-\
+1b7f50f84e9b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Uppgift 5 ", "Section",
+ CellChangeTimes->{{3.749455991054357*^9, 
+  3.749455994215377*^9}},ExpressionUUID->"199bc690-c3a5-4e4c-aa0b-\
+f83b4725bfb7"],
+
+Cell[CellGroupData[{
+
+Cell["Problem", "Subsection",
+ CellChangeTimes->{{3.749456171183382*^9, 
+  3.74945617232407*^9}},ExpressionUUID->"ebec44af-176a-4b5d-97e7-\
+0ac44bdd2e88"],
+
+Cell["\<\
+(1) Best\[ADoubleDot]m n\[ARing]gra olika v\[ADoubleDot]rden p\[ARing] e om p \
+= 19 och q = 13. V\[ADoubleDot]lj d\[ADoubleDot]refter ett av \
+v\[ADoubleDot]rdena p\[ARing] e, best\[ADoubleDot]m d och kryptera \
+meddelandet M = 10. Kontrollera dina ber\[ADoubleDot]kningar genom att \
+avkryptera det krypterade meddelandet. (2) Vilka meddelanden (tal) M kan \
+krypteras med ovanst\[ARing]ende nycklar?\
+\>", "Text",
+ CellChangeTimes->{{3.749456236247241*^9, 3.7494562412251673`*^9}, {
+  3.7494829669098797`*^9, 
+  3.7494829755834618`*^9}},ExpressionUUID->"d1e3b39d-7e40-4f82-9e17-\
+7142db674d67"]
+}, Open  ]],
+
+Cell["L\[ODoubleDot]sning", "Subsection",
+ CellChangeTimes->{{3.7494565682581367`*^9, 
+  3.749456572146442*^9}},ExpressionUUID->"94e833dc-6eb4-4be7-9a87-\
+b1c5a2b3a75b"],
+
+Cell[CellGroupData[{
+
+Cell["1.", "Subsection",
+ CellChangeTimes->{{3.7494829580670424`*^9, 
+  3.749482958348769*^9}},ExpressionUUID->"e4411eaa-d558-4865-ab98-\
+d22195c2ab85"],
+
+Cell[TextData[{
+ "\[Phi](n) = (q-1)(p-1) = 216 = 2*108 = 2*2*2*24 = 2*2*2*2*12 = 2*2*2*2*2*6 \
+= 2*2*2*2*2*2*3.\nTalet e m\[ARing]ste vara relativ prima med 216, exempel p\
+\[ARing] s\[ARing]dana tal kan vara 5, 7, 11 och 19 bland andra. Talet e v\
+\[ADoubleDot]ljs bland primtal, vi v\[ADoubleDot]ljer talet e = 11.\n\ne*d \
+\[Congruent] 1 mod \[Phi](n)\n\[Phi](n) = (q-1)(p-1) = 216\n\nK(M) = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["M", "e"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "42e36a44-b595-4ec5-a764-e26756385ab1"],
+ " mod(n)\n",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "11"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "9921b9fe-f936-462e-884e-dce69a69406d"],
+ " mod(247) = 147\nn = pq = 13 * 11 = 143"
+}], "Text",
+ CellChangeTimes->{{3.749458650225781*^9, 3.749458697481946*^9}, {
+  3.74945906317747*^9, 3.749459106878401*^9}, {3.7494591435155983`*^9, 
+  3.749459207235579*^9}, {3.749459695571356*^9, 3.7494598142058983`*^9}, {
+  3.749460017841927*^9, 3.7494600275036907`*^9}, {3.749460064360653*^9, 
+  3.74946010281348*^9}, {3.749460210864897*^9, 3.7494602123874197`*^9}, {
+  3.749460427497097*^9, 3.7494605330202103`*^9}, {3.749460567733753*^9, 
+  3.749460568984671*^9}, {3.749465658689192*^9, 3.749465730501693*^9}, {
+  3.749465775716578*^9, 3.749465783763444*^9}, {3.7494658482435827`*^9, 
+  3.7494658494279537`*^9}, {3.7494660305003347`*^9, 3.749466183036643*^9}, {
+  3.749466397614821*^9, 3.749466398997569*^9}, {3.749466443266355*^9, 
+  3.749466445236614*^9}, {3.749480768233007*^9, 3.749480778357882*^9}, {
+  3.7494808874314528`*^9, 3.7494808915067053`*^9}, {3.7494809267255507`*^9, 
+  3.749480927897026*^9}},ExpressionUUID->"270d6822-448b-475e-a745-\
+6e0eaa5aa72e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PowerMod", "[", 
+  RowBox[{"10", ",", "11", ",", "247"}], "]"}]], "Code",
+ CellChangeTimes->{{3.749465789182481*^9, 3.749465832391938*^9}},
+ CellLabel->"In[67]:=",ExpressionUUID->"7e5fb250-0c91-4c79-8a76-892f47adc562"],
+
+Cell[BoxData["147"], "Output",
+ CellChangeTimes->{{3.749465809901485*^9, 3.749465833173403*^9}},
+ CellLabel->"Out[67]=",ExpressionUUID->"0294f1df-d29a-4921-a251-323b5a0488aa"]
+}, Open  ]],
+
+Cell[TextData[{
+ "K(10) = 147\n\nM = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    RowBox[{"K", "(", "M", ")"}], "d"], TraditionalForm]],ExpressionUUID->
+  "699075be-12f4-4ee8-8379-2f9b3af61579"],
+ "\n10 = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "d"], TraditionalForm]],ExpressionUUID->
+  "be2e94ef-268f-4dbe-97e8-931a5d70e25e"],
+ "mod(143)\ned \[Congruent] 1 mod (\[Phi](n))\n(d*e) \[Congruent] 1 mod(216)\n\
+\nD\[ARing] ska vi l\[ODoubleDot]sa:\n(11*d) + (216*y) = 1\n\nEuklides \
+algoritm, SGD (11,216)\n216 = 11 * 19 + 7\n11 = 7 * 1 + 4 \n7 = 4 * 1 + 3\n4 \
+= 3 * 1 + 1\n\nd = 59, y = -3\n\nAvkryptera:"
+}], "Text",
+ CellChangeTimes->{
+  3.7494808972882423`*^9, {3.7494810605611153`*^9, 3.749481100298333*^9}, {
+   3.7494812967004433`*^9, 3.749481308307435*^9}, {3.749481411559284*^9, 
+   3.749481417020194*^9}, {3.7494814503690863`*^9, 3.7494815063304462`*^9}, {
+   3.749481538935277*^9, 3.749481738762519*^9}, {3.7494817842888107`*^9, 
+   3.7494817942758923`*^9}, {3.749482242757661*^9, 3.749482244071294*^9}, {
+   3.749482285719818*^9, 3.749482326276127*^9}, {3.749482602500317*^9, 
+   3.749482648943082*^9}, {3.749484761155974*^9, 3.749484828510489*^9}, {
+   3.749484973890853*^9, 3.749485096531641*^9}, {3.7494881567420454`*^9, 
+   3.7494881852602644`*^9}, 
+   3.7494882871727*^9},ExpressionUUID->"7fc6f2f9-8247-4757-a385-71146aa8ccc7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PowerMod", "[", 
+  RowBox[{"10", ",", " ", "11", ",", " ", "247"}], "]"}]], "Input",
+ CellChangeTimes->{{3.749488187979001*^9, 3.7494882023915014`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6cc47f33-c9b2-47c3-9d40-c8e067e1083e"],
+
+Cell[BoxData["147"], "Output",
+ CellChangeTimes->{3.749488204881527*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"30f3b7a4-b059-4eed-8f40-5c2b78e9ce74"]
+}, Open  ]],
+
+Cell["Avkryptera:", "Text",
+ CellChangeTimes->{{3.7494882229632826`*^9, 3.7494882276670856`*^9}, 
+   3.749488285217055*^9},ExpressionUUID->"c7488051-741b-4cdf-b6f7-\
+776511472a6f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PowerMod", "[", 
+  RowBox[{"147", ",", " ", "59", ",", " ", "247"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7494882300561028`*^9, 3.749488274061615*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"fabca51d-7c7b-432d-85e0-bae5ba15964b"],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{3.74948827988124*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"2ddaff7f-caea-43af-a3e9-03f623c3573c"]
+}, Open  ]],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.749488405533836*^9, 3.749488416924119*^9}, 
+   3.7494884520961404`*^9},ExpressionUUID->"366d7c50-3b46-4f30-bee6-\
+33266220a887"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Matematicakod", "Subsection",
+ CellChangeTimes->{{3.7494827895079727`*^9, 
+  3.749482794459619*^9}},ExpressionUUID->"21a38839-74a6-49f0-99b0-\
+66943cd180c1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"PowerMod", "[", 
+   RowBox[{"10", ",", " ", "11", ",", " ", "247"}], "]"}], "\n"}], "\n", 
+ RowBox[{"PowerMod", "[", 
+  RowBox[{"147", ",", " ", "59", ",", " ", "247"}], "]"}]}], "Code",
+ CellChangeTimes->{{3.749482665331726*^9, 3.749482669191626*^9}, {
+  3.749488338485668*^9, 3.749488346820265*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"eee751d8-3c2e-489f-881c-45b2043fa9f9"],
+
+Cell[BoxData["147"], "Output",
+ CellChangeTimes->{3.749488348941923*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"591d6426-82cd-42c8-8b20-82acc96e8bc0"],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{3.749488348941923*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"fd1ca0fd-4b41-4dd8-a6ac-b262bad701dc"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2. ", "Subsection",
+ CellChangeTimes->{{3.749482815800857*^9, 
+  3.74948281634291*^9}},ExpressionUUID->"c5deb23c-496f-435b-8dcf-\
+367b5682b3b6"],
+
+Cell["\<\
+Vilka meddelanden (tal) M kan krypteras med ovanst\[ARing]ende nycklar?
+
+N\[ADoubleDot]r  0 \[LessEqual] M \[LessEqual] n
+Eftersom att g\[ARing]r det \[ODoubleDot]ver n kommer det ge fel v\
+\[ADoubleDot]rde i avkrypteringen.\
+\>", "Text",
+ CellChangeTimes->{{3.749483007820949*^9, 3.749483023575138*^9}, {
+  3.74948306292498*^9, 3.749483090326537*^9}, {3.749483140787334*^9, 
+  3.749483144758889*^9}, {3.749483238590088*^9, 3.74948325695182*^9}, {
+  3.749483357265411*^9, 3.749483368093172*^9}, {3.74948430947054*^9, 
+  3.749484314687042*^9}, {3.749488931540034*^9, 3.7494889353345165`*^9}, {
+  3.7494890398169885`*^9, 3.7494890444574385`*^9}, {3.749489141336342*^9, 
+  3.7494891760275774`*^9}, {3.7494892502438455`*^9, 3.749489283910752*^9}, {
+  3.7494893391753473`*^9, 3.7494893393784685`*^9}, {3.749489374053009*^9, 
+  3.7494893742649736`*^9}},ExpressionUUID->"f85d5f47-01f3-47c9-8d8d-\
+41398e7a82d2"],
+
+Cell["", "Text",ExpressionUUID->"fafb3e16-8d89-4f4d-a58b-9603a99c4bc4"],
+
+Cell["\<\
+
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.749456824729019*^9, 3.7494568528098993`*^9}, 
+   3.749481289280002*^9, {3.7494826567642107`*^9, 
+   3.74948265782557*^9}},ExpressionUUID->"7cde68ff-5113-42b8-b434-\
+e9ab568aa8d6"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Uppgift 6 ", "Section",
+ CellChangeTimes->{{3.749456002394169*^9, 
+  3.74945600783801*^9}},ExpressionUUID->"33bde729-c363-4bf3-bb61-\
+c607522b183b"],
+
+Cell[CellGroupData[{
+
+Cell["Problem", "Subsection",
+ CellChangeTimes->{{3.749456271183495*^9, 
+  3.749456272792153*^9}},ExpressionUUID->"4d7790a3-8324-414d-be1c-\
+267c53ab9dbb"],
+
+Cell["\<\
+Skriv ett program i Mathematica som krypterar och avkrypterar ett godtyckligt \
+textmeddelande. Anv\[ADoubleDot]nd Unicode f\[ODoubleDot]r tecknen d\[ARing] \
+meddelandet transformeras till ett heltal och kryptera/avkryptera ett tecken \
+i taget. Indata till programmet ska vara textmeddelandet, samt antalet \
+siffror i primtalen q och p. Dessa ska sedan genereras \
+slumpm\[ADoubleDot]ssigt.\
+\>", "Text",
+ CellChangeTimes->{{3.7494562978057747`*^9, 
+  3.749456306554516*^9}},ExpressionUUID->"1f274950-2b24-4a90-838b-\
+49c2f8eacdd0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["L\[ODoubleDot]sning ", "Subsection",
+ CellChangeTimes->{{3.7494610144518623`*^9, 
+  3.7494610155002193`*^9}},ExpressionUUID->"7db0a097-6b11-4b45-8d5b-\
+2318473a1924"],
+
+Cell[CellGroupData[{
+
+Cell["Kryptering", "Subsubsection",
+ CellChangeTimes->{{3.7494610308408737`*^9, 
+  3.749461034702153*^9}},ExpressionUUID->"bb70d754-ad41-4704-8ba1-\
+e1c7afddaa2d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"text", "=", 
+    RowBox[{
+    "InputString", "[", "\"\<S kriv din text h\[ADoubleDot]r\>\"", "]"}]}], 
+   ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", " ", 
+   RowBox[{"ToCharacterCode", "[", 
+    RowBox[{"text", ",", "\"\<Unicode\>\""}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"p", "=", " ", 
+   RowBox[{"RandomPrime", "[", 
+    RowBox[{"{", 
+     RowBox[{"100", ",", " ", "10000"}], "}"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"q", "=", " ", 
+   RowBox[{"RandomPrime", "[", 
+    RowBox[{"{", 
+     RowBox[{"100", ",", " ", "10000"}], "}"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"b", "=", " ", 
+   RowBox[{"RandomPrime", "[", 
+    RowBox[{"{", 
+     RowBox[{"100", ",", " ", "10000"}], "}"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"n", "=", 
+   RowBox[{"p", "*", "q"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"kryptT", " ", "=", " ", 
+    RowBox[{"PowerMod", "[", 
+     RowBox[{"a", ",", "b", ",", "n"}], "]"}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<q= \>\"", ",", "q"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<p= \>\"", ",", "p"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<b= \>\"", ",", "b"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<n= \>\"", ",", "n"}], "]"}], ";"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<Okrypterat meddelande: \>\"", ",", " ", "text"}], 
+  "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{"\"\<Krypterat meddelande:\>\"", ",", " ", "kryptT"}], 
+  "]"}]}], "Code",
+ CellChangeTimes->{
+  3.7494619778354588`*^9, {3.749462030269664*^9, 3.749462034692754*^9}, 
+   3.749482888094923*^9, 
+   3.74948292379675*^9},ExpressionUUID->"83682f06-40fb-464b-811f-\
+8facee57f149"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"q= \"\>", "\[InvisibleSpace]", "911"}],
+  SequenceForm["q= ", 911],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7494623921802673`*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"f03f951e-cc55-4fd2-a502-0d72bfc85fa8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"p= \"\>", "\[InvisibleSpace]", "8291"}],
+  SequenceForm["p= ", 8291],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.74946239218989*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"058c6108-c7bc-408c-a21e-ab9bce51634d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"b= \"\>", "\[InvisibleSpace]", "7177"}],
+  SequenceForm["b= ", 7177],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.749462392201264*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"7770daaa-4f48-4caf-a5fc-92aa9c7fc040"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"n= \"\>", "\[InvisibleSpace]", "7553101"}],
+  SequenceForm["n= ", 7553101],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7494623922105923`*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"468f9fe8-a51d-456b-9d7d-38a13eebef10"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Okrypterat meddelande: \"\>", 
+   "\[InvisibleSpace]", "\<\"hejhej\"\>"}],
+  SequenceForm["Okrypterat meddelande: ", "hejhej"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.749462392221882*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"7edd5fb7-c3bc-441b-aaf9-4d4f9c33c17e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Krypterat meddelande:\"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+    "5805329", ",", "2972203", ",", "2539758", ",", "5805329", ",", "2972203",
+      ",", "2539758"}], "}"}]}],
+  SequenceForm[
+  "Krypterat meddelande:", {5805329, 2972203, 2539758, 5805329, 2972203, 
+   2539758}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.749462392230329*^9},
+ CellLabel->
+  "During evaluation of \
+In[41]:=",ExpressionUUID->"aac86b00-c10d-4010-b0b8-9af94a959bdd"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Avkryptering", "Subsubsection",
+ CellChangeTimes->{{3.749462432311215*^9, 
+  3.749462435929571*^9}},ExpressionUUID->"63187e46-9a09-4301-bc46-\
+bd14c190277c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"nPhi", " ", "=", " ", 
+   RowBox[{"EulerPhi", "[", "n", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Clear", "[", "c", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Clear", "[", "d", "]"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"temp", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Reduce", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"c", "*", "b"}], "+", 
+         RowBox[{"d", "*", "nPhi"}]}], " ", "\[Equal]", " ", "1"}], ",", " ", 
+       
+       RowBox[{"{", 
+        RowBox[{"c", ",", "d"}], "}"}], ",", " ", "Integers"}], "]"}], ",", 
+     "\n", 
+     RowBox[{"{", "1", "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Print", "[", "temp", "]"}], "\n", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"temp", "[", 
+    RowBox[{"[", 
+     RowBox[{"1", ",", "2", ",", "2", ",", "1"}], "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"avkryptT", " ", "=", " ", 
+   RowBox[{"FromCharacterCode", "[", 
+    RowBox[{"PowerMod", "[", 
+     RowBox[{"kryptT", ",", " ", "c", ",", " ", "n"}], "]"}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<c= \>\"", ",", " ", "c"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Avkrypterad text: \>\"", ",", " ", "avkryptT"}], "]"}], 
+  ";"}], "\n"}], "Code",
+ CellChangeTimes->{{3.749462499078657*^9, 3.7494629267489767`*^9}},
+ CellLabel->"In[54]:=",ExpressionUUID->"6a4439dc-1a5a-4858-a6b3-e8e80e51d3b5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"C", "[", "1", "]"}], "\[Element]", 
+    TemplateBox[{},
+     "Integers"]}], "&&", 
+   RowBox[{"c", "\[Equal]", 
+    RowBox[{"4182413", "+", 
+     RowBox[{"7543900", " ", 
+      RowBox[{"C", "[", "1", "]"}]}]}]}], "&&", 
+   RowBox[{"d", "\[Equal]", 
+    RowBox[{
+     RowBox[{"-", "3979"}], "-", 
+     RowBox[{"7177", " ", 
+      RowBox[{"C", "[", "1", "]"}]}]}]}]}], "}"}]], "Print",
+ CellChangeTimes->{3.7494629357988653`*^9},
+ CellLabel->
+  "During evaluation of \
+In[54]:=",ExpressionUUID->"94b7e647-4b69-4947-a3e0-ec6e56311e73"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"c= \"\>", "\[InvisibleSpace]", "4182413"}],
+  SequenceForm["c= ", 4182413],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7494629358080883`*^9},
+ CellLabel->
+  "During evaluation of \
+In[54]:=",ExpressionUUID->"212ef141-fe8b-4c3c-8c38-08295fa605ea"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Avkrypterad text: \"\>", 
+   "\[InvisibleSpace]", "\<\"hejhej\"\>"}],
+  SequenceForm["Avkrypterad text: ", "hejhej"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7494629358199873`*^9},
+ CellLabel->
+  "During evaluation of \
+In[54]:=",ExpressionUUID->"fb5eef2e-74f3-4461-b508-d9c09b736d72"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.7494622576643467`*^9, {3.749462331177833*^9, 
+   3.749462340962864*^9}},ExpressionUUID->"1ef7db8b-6cf2-4dab-81a0-\
+008cb3b29758"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7494618522126617`*^9, 
+  3.7494618530722*^9}},ExpressionUUID->"b9d80cf9-c9eb-493a-9511-9924bc4a4be0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Referenser", "Section",
+ CellChangeTimes->{{3.74703055785647*^9, 3.747030559334161*^9}, 
+   3.747030750449839*^9, {3.7470326282452717`*^9, 3.747032630802785*^9}, 
+   3.749447676613702*^9, 
+   3.749447909831411*^9},ExpressionUUID->"17f39cd7-0deb-4c25-b527-\
+14223b2a9cd9"],
+
+Cell["\<\
+H\[ADoubleDot]r anges vilka k\[ADoubleDot]llor som utnyttjats och som \
+refereras till i rapporten. Ex:\
+\>", "Text",
+ CellChangeTimes->{{3.747032694351891*^9, 3.747032760637721*^9}, {
+  3.747033210631525*^9, 
+  3.747033215719449*^9}},ExpressionUUID->"42275ee3-1dc8-4a37-98a3-\
+80c5edecff95"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+[1] Projektuppgift 1.5 hp,  \
+http://dixon.hh.se/mikael/teaching/algdisk/project.shtml\
+\>", "ItemParagraph",
+ CellChangeTimes->{{3.7470326341359787`*^9, 3.747032679334342*^9}, {
+  3.747032740517606*^9, 3.747032756610776*^9}, {3.7470333555998917`*^9, 
+  3.747033440031234*^9}, {3.747033470793007*^9, 3.74703348400056*^9}, {
+  3.747033537568532*^9, 
+  3.747033539104534*^9}},ExpressionUUID->"a8641d47-1270-4ed9-97ae-\
+c36e46a99611"],
+
+Cell[TextData[{
+ "[2] J. Johansson och S. Lemurell, Algebra och diskret matematik, \
+Studentlitteratur (2013)",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["7", "82"], TraditionalForm]],ExpressionUUID->
+  "9d5a7bc3-53fe-4180-9fd6-1c92634ab25b"]
+}], "ItemParagraph",
+ CellChangeTimes->{{3.7470326341359787`*^9, 3.747032679334342*^9}, {
+   3.747032740517606*^9, 3.747032756998334*^9}, {3.7470333674637747`*^9, 
+   3.747033368543895*^9}, {3.747033402736598*^9, 3.7470334036273823`*^9}, 
+   3.749448101018416*^9},ExpressionUUID->"3b862922-1365-4dd9-aec6-\
+33d4499207c4"],
+
+Cell["", "ItemParagraph",
+ CellChangeTimes->{{3.7470326341359787`*^9, 3.747032679334342*^9}, {
+   3.747032740517606*^9, 3.747032756998334*^9}, {3.7470333674637747`*^9, 
+   3.747033368543895*^9}, 3.747033402736598*^9, 
+   3.749465598491166*^9},ExpressionUUID->"adb0601e-63f7-4b34-aec6-\
+f7c2ef05c106"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->{"RulerBar", "EditBar"},
+WindowSize->{1250, 669},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+DockedCells->{
+  Cell[
+   BoxData[
+    PanelBox[
+     PaneBox[
+      TagBox[
+       GridBox[{{
+          StyleBox[
+           DynamicBox[
+            FEPrivate`FrontEndResource[
+            "NotebookTemplatingStrings", "TemplateNotebook"], BaseStyle -> 
+            "TextStyling", ImageSizeCache -> {122., {3., 10.}}, 
+            SingleEvaluation -> True], "Text", StripOnInput -> False, 
+           FontSize -> 12, FontWeight -> Bold, FontColor -> GrayLevel[0.4]]}, {
+          TagBox[
+           GridBox[{{
+              TagBox[
+               GridBox[{{
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    GridBox[{{
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    PaneBox[
+                    TagBox[
+                    GridBox[{{
+                    PaneBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "TemplateSlotIcon"], 
+                    ImageSizeCache -> {14., {4., 8.}}, SingleEvaluation -> 
+                    True], ImageMargins -> {{Automatic, Automatic}, {
+                    2, Automatic}}], 
+                    RowBox[{
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "TemplateSlot"], BaseStyle -> 
+                    "TextStyling", ImageSizeCache -> {22., {1., 9.}}, 
+                    SingleEvaluation -> True], "Text", StripOnInput -> False, 
+                    TextAlignment -> Center, FontSize -> 11, FontWeight -> 
+                    Bold, FontColor -> 
+                    RGBColor[0.4588235294117647, 0.4588235294117647, 
+                    0.4588235294117647]], 
+                    StyleBox[
+                    "j", "Text", FontSize -> 11, FontWeight -> Bold, 
+                    ShowContents -> False]}]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Center}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.5}}, "Rows" -> {{Automatic}}}], "Grid"]],
+                     Alignment -> Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDropdownLeftAppearance"], ButtonFunction :> 
+                    NotebookTemplating`Authoring`Private`makeTemplateSlot[
+                    ButtonNotebook[], "Named"], Evaluator -> Automatic, 
+                    FrameMargins -> {{5, 0}, {Inherited, Inherited}}, 
+                    ImageSize -> {Automatic, 26}, Method -> "Preemptive"], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], 
+                    DynamicModuleBox[{}, 
+                    ActionMenuBox[
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    "\"\"", Alignment -> Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDropdownRightAppearance"], ButtonFunction :> Null, 
+                    Evaluator -> Automatic, ImageSize -> {Automatic, 26}, 
+                    Method -> "Preemptive"], DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], {
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "Named"], BaseStyle -> 
+                    "TextStyling", SingleEvaluation -> True], StripOnInput -> 
+                    False, TextAlignment -> Left] :> 
+                    NotebookTemplating`Authoring`Private`makeTemplateSlot[
+                    ButtonNotebook[], "Named"], StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "Positional"], BaseStyle -> 
+                    "TextStyling", SingleEvaluation -> True], StripOnInput -> 
+                    False, TextAlignment -> Left] :> 
+                    NotebookTemplating`Authoring`Private`makeTemplateSlot[
+                    ButtonNotebook[], "Positional"]}, Appearance -> None], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"])]}}, AutoDelete -> 
+                    False, GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], "Grid"], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "TemplateSlotTooltip"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}, 
+                    StripOnInput -> False], TooltipDelay -> 0.5, 
+                    TooltipStyle -> {"Text", Smaller}], Annotation[#, 
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "TemplateSlotTooltip"]], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}], 
+                    "Tooltip"]& ], 
+                  TagBox[
+                   TooltipBox[
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    PaneBox[
+                    TagBox[
+                    GridBox[{{
+                    PaneBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "TemplateExpressionIcon"], 
+                    ImageSizeCache -> {14., {4., 8.}}, SingleEvaluation -> 
+                    True], ImageMargins -> {{Automatic, Automatic}, {
+                    2, Automatic}}], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "TemplateExpression"], 
+                    BaseStyle -> "TextStyling", 
+                    ImageSizeCache -> {63., {2., 9.}}, SingleEvaluation -> 
+                    True], "Text", StripOnInput -> False, TextAlignment -> 
+                    Center, FontSize -> 11, FontWeight -> Bold, FontColor -> 
+                    RGBColor[0.4588235294117647, 0.4588235294117647, 
+                    0.4588235294117647]]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Center}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.5}}, "Rows" -> {{Automatic}}}], "Grid"]],
+                     Alignment -> Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDefaultAppearance"], ButtonFunction :> 
+                    NotebookTemplating`Authoring`Private`\
+makeEvaluationExpression[
+                    ButtonNotebook[]], Evaluator -> Automatic, 
+                    FrameMargins -> {{5, 5}, {Inherited, Inherited}}, 
+                    ImageSize -> {Automatic, 26}, Method -> "Preemptive"], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "TemplateExpressionTooltip"],
+                     BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}, 
+                    StripOnInput -> False], TooltipDelay -> 0.5, 
+                    TooltipStyle -> {"Text", Smaller}], Annotation[#, 
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", 
+                    "TemplateExpressionTooltip"]], BaseStyle -> "TextStyling",
+                     SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}], 
+                    "Tooltip"]& ], 
+                  TagBox[
+                   TooltipBox[
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    PaneBox[
+                    TagBox[
+                    GridBox[{{
+                    PaneBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "RepeatingBlockIcon"], 
+                    ImageSizeCache -> {14., {4., 8.}}, SingleEvaluation -> 
+                    True], ImageMargins -> {{Automatic, Automatic}, {
+                    1, Automatic}}], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "RepeatingBlock"], BaseStyle -> 
+                    "TextStyling", ImageSizeCache -> {91., {3., 9.}}, 
+                    SingleEvaluation -> True], "Text", StripOnInput -> False, 
+                    TextAlignment -> Center, FontSize -> 11, FontWeight -> 
+                    Bold, FontColor -> 
+                    RGBColor[0.4588235294117647, 0.4588235294117647, 
+                    0.4588235294117647]]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Center}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.5}}, "Rows" -> {{Automatic}}}], "Grid"]],
+                     Alignment -> Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDefaultAppearance"], ButtonFunction :> 
+                    NotebookTemplating`Authoring`Private`\
+manageTemplateNameBlock[
+                    ButtonNotebook[]], Evaluator -> Automatic, 
+                    FrameMargins -> {{5, 5}, {Inherited, Inherited}}, 
+                    ImageSize -> {Automatic, 26}, Method -> "Queued"], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "RepeatingBlockTooltip"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}, 
+                    StripOnInput -> False], TooltipDelay -> 0.5, 
+                    TooltipStyle -> {"Text", Smaller}], Annotation[#, 
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "RepeatingBlockTooltip"]], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}], 
+                    "Tooltip"]& ], "\"\"", "\"\"", 
+                  TagBox[
+                   TooltipBox[
+                    DynamicModuleBox[{}, 
+                    ActionMenuBox[
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    PaneBox[
+                    RowBox[{
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "CellBehavior"], BaseStyle -> 
+                    "TextStyling", ImageSizeCache -> {80., {1., 9.}}, 
+                    SingleEvaluation -> True], "Text", StripOnInput -> False, 
+                    TextAlignment -> Center, FontSize -> 11, FontWeight -> 
+                    Bold, FontColor -> 
+                    RGBColor[0.4588235294117647, 0.4588235294117647, 
+                    0.4588235294117647]], 
+                    StyleBox[
+                    "j", "Text", FontSize -> 11, FontWeight -> Bold, 
+                    ShowContents -> False]}], ImageMargins -> 1], Alignment -> 
+                    Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDropdownBothAppearance"], ButtonFunction :> Null, 
+                    Evaluator -> Automatic, 
+                    FrameMargins -> {{5, 0}, {Inherited, Inherited}}, 
+                    ImageSize -> {Automatic, 26}, Method -> "Preemptive"], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], {TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "evalDeleteMenuIcon"], 
+                    SingleEvaluation -> True], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "reportInputMenuDelete"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    StripOnInput -> False, TextAlignment -> Left, Background -> 
+                    None]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"] :> 
+                    NotebookTemplating`Authoring`Private`tagEvaluationCell[1],
+                     TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "evalHideMenuIcon"], 
+                    SingleEvaluation -> True], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "reportInputMenuHide"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    StripOnInput -> False, TextAlignment -> Left, Background -> 
+                    None]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"] :> 
+                    NotebookTemplating`Authoring`Private`tagEvaluationCell[2],
+                     TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "unevalMenuIcon"], 
+                    SingleEvaluation -> True], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", 
+                    "reportInputMenuUnevaluated"], BaseStyle -> "TextStyling",
+                     SingleEvaluation -> True], StripOnInput -> False, 
+                    TextAlignment -> Left, Background -> None]}}, AutoDelete -> 
+                    False, GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"] :> 
+                    NotebookTemplating`Authoring`Private`tagEvaluationCell[3],
+                     TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "excludeMenuIcon"], 
+                    SingleEvaluation -> True], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "reportInputMenuExclude"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    StripOnInput -> False, TextAlignment -> Left, Background -> 
+                    None]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"] :> 
+                    NotebookTemplating`Authoring`Private`tagEvaluationCell[4],
+                     Delimiter, TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "removeMenuIcon"], 
+                    SingleEvaluation -> True], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "reportInputMenuRemove"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    StripOnInput -> False, TextAlignment -> Left, Background -> 
+                    None]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Grid"] :> 
+                    NotebookTemplating`Authoring`Private`untagEvaluationCell[
+                    EvaluationNotebook[]]}, Alignment -> Left, Appearance -> 
+                    None], DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"])], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "EvaluatableCellsTooltip"], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}, 
+                    StripOnInput -> False], TooltipDelay -> 0.5, 
+                    TooltipStyle -> {"Text", Smaller}], Annotation[#, 
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "EvaluatableCellsTooltip"]], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}], 
+                    "Tooltip"]& ], "\"\"", "\"\""}}, AutoDelete -> False, 
+                GridBoxDividers -> {
+                 "ColumnsIndexed" -> {
+                   5 -> RGBColor[
+                    0.7176470588235294, 0.7176470588235294, 
+                    0.7176470588235294], 8 -> 
+                    RGBColor[
+                    0.7176470588235294, 0.7176470588235294, 
+                    0.7176470588235294]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+               "Grid"], 
+              ItemBox[
+               TagBox[
+                GridBox[{{"\"\"", 
+                   TagBox[
+                    TooltipBox[
+                    
+                    DynamicModuleBox[{
+                    NotebookTemplating`Authoring`Private`running$$ = False}, 
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    PaneSelectorBox[{False -> PaneBox[
+                    TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "GenerateIcon"], 
+                    ImageSizeCache -> {11., {4., 8.}}, SingleEvaluation -> 
+                    True], 
+                    RowBox[{
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "Preview"], BaseStyle -> 
+                    "TextStyling", ImageSizeCache -> {51., {1., 8.}}, 
+                    SingleEvaluation -> True], "Text", StripOnInput -> False, 
+                    TextAlignment -> Center, FontSize -> 11, FontWeight -> 
+                    Bold, FontColor -> 
+                    RGBColor[0.4588235294117647, 0.4588235294117647, 
+                    0.4588235294117647]], 
+                    StyleBox[
+                    "j", "Text", FontSize -> 11, FontWeight -> Bold, 
+                    ShowContents -> False]}]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Center}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.5}}, "Rows" -> {{Automatic}}}], "Grid"]],
+                     True -> "\"\[Ellipsis]\""}, 
+                    Dynamic[
+                    TrueQ[NotebookTemplating`Authoring`Private`running$$]], 
+                    Alignment -> {Center, Baseline}, BaselinePosition -> 
+                    Baseline], Alignment -> Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDefaultAppearance"], 
+                    ButtonFunction :> (
+                    NotebookTemplating`Authoring`Private`running$$ = True; 
+                    CheckAbort[
+                    NotebookTemplating`Authoring`Private`generatePreview[
+                    ButtonNotebook[]], $Aborted]; 
+                    NotebookTemplating`Authoring`Private`running$$ = False), 
+                    Enabled -> Dynamic[
+                    Not[NotebookTemplating`Authoring`Private`running$$]], 
+                    Evaluator -> Automatic, 
+                    FrameMargins -> {{10, 6}, {Inherited, Inherited}}, 
+                    ImageSize -> {Automatic, 26}, Method -> "Queued"], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"])], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "PreviewTooltip"], BaseStyle -> 
+                    "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}, 
+                    StripOnInput -> False], TooltipDelay -> 0.5, 
+                    TooltipStyle -> {"Text", Smaller}], Annotation[#, 
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "PreviewTooltip"]], 
+                    BaseStyle -> "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}], 
+                    "Tooltip"]& ], 
+                   TagBox[
+                    TooltipBox[
+                    DynamicModuleBox[{}, 
+                    ButtonBox[
+                    PaneBox[
+                    TagBox[
+                    GridBox[{{
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingBitmaps", "HelpIcon"], 
+                    ImageSizeCache -> {12., {4., 8.}}, SingleEvaluation -> 
+                    True], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "Help"], BaseStyle -> 
+                    "TextStyling", ImageSizeCache -> {26., {2., 9.}}, 
+                    SingleEvaluation -> True], "Text", StripOnInput -> False, 
+                    TextAlignment -> Center, FontSize -> 11, FontWeight -> 
+                    Bold, FontColor -> 
+                    RGBColor[0.4588235294117647, 0.4588235294117647, 
+                    0.4588235294117647]]}}, AutoDelete -> False, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Center}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.5}}, "Rows" -> {{Automatic}}}], "Grid"]],
+                     Alignment -> Center, Appearance -> 
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingExpressions", 
+                    "ButtonDefaultAppearance"], ButtonFunction :> 
+                    SystemOpen["paclet:guide/AutomatedReports"], Evaluator -> 
+                    Automatic, 
+                    FrameMargins -> {{10, 10}, {Inherited, Inherited}}, 
+                    ImageSize -> {Automatic, 26}, Method -> "Preemptive"], 
+                    DynamicModuleValues :> {}, 
+                    Initialization :> (Needs["NotebookTemplating`"]; 
+                    Needs["NotebookTemplating`Authoring`"]; Null)], 
+                    StyleBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "HelpTooltip"], BaseStyle -> 
+                    "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}, 
+                    StripOnInput -> False], TooltipDelay -> 0.5, 
+                    TooltipStyle -> {"Text", Smaller}], Annotation[#, 
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "NotebookTemplatingStrings", "HelpTooltip"]], BaseStyle -> 
+                    "TextStyling", SingleEvaluation -> True], 
+                    LinebreakAdjustments -> {0.95, 10, 100, 500, 500}], 
+                    "Tooltip"]& ]}}, AutoDelete -> False, 
+                 GridBoxAlignment -> {"Rows" -> {{Bottom}}}, 
+                 GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                "Grid"], Alignment -> Right, StripOnInput -> False]}}, 
+            AutoDelete -> False, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Bottom}}},
+             GridBoxItemSize -> {"Columns" -> {
+                Scaled[0.7], 
+                Scaled[0.3]}}], "Grid"]}}, 
+        BaseStyle -> {
+         "DialogStyle", FontColor -> 
+          RGBColor[
+           0.33333333333333337`, 0.33333333333333337`, 0.33333333333333337`]},
+         DefaultBaseStyle -> "Column", 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+        GridBoxSpacings -> {"Columns" -> {{Automatic}}, "Rows" -> {{1}}}], 
+       "Column"], ImageMargins -> {{5, 5}, {Automatic, Automatic}}], 
+     Appearance -> 
+     FEPrivate`FrontEndResource[
+      "NotebookTemplatingExpressions", "DockedCellBackground"], 
+     FrameMargins -> {{8, 8}, {8, 12}}, ImageMargins -> -1]], 
+   ShowStringCharacters -> False, "NotebookTemplateDockedCell"]},
+TaggingRules->{"NotebookTemplateVersion" -> 1., "NotebookTemplate" -> True},
+CellContext->Notebook,
+DefaultNaturalLanguage->"Swedish",
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 354, 6, 96, "Title",ExpressionUUID->"7e33efbb-55a7-4ce1-aea7-3c236b912ae4"],
+Cell[937, 30, 237, 4, 53, "Subtitle",ExpressionUUID->"6138bb78-f752-4811-af81-4a688c06f081"],
+Cell[CellGroupData[{
+Cell[1199, 38, 293, 5, 67, "Section",ExpressionUUID->"5a836fc7-f600-462e-a1eb-afb5f0822523"],
+Cell[CellGroupData[{
+Cell[1517, 47, 390, 6, 31, "Item",ExpressionUUID->"1e05dd8c-a3ff-4902-bdcf-2adba878a828"],
+Cell[1910, 55, 508, 7, 31, "Item",ExpressionUUID->"1ac97144-3d7a-4890-a9f7-7937bc8abd28"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2467, 68, 278, 5, 67, "Section",ExpressionUUID->"3d181e42-856e-4ab3-83af-ee9bf6f83a7b"],
+Cell[CellGroupData[{
+Cell[2770, 77, 154, 3, 53, "Subsection",ExpressionUUID->"b07772ca-d953-4da1-bc4a-c13d93f6754a"],
+Cell[2927, 82, 1618, 26, 56, "Text",ExpressionUUID->"bbdfb257-1e3c-4c23-ad0e-955da170af6b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4582, 113, 364, 6, 53, "Subsection",ExpressionUUID->"02c89abc-85e4-401b-99a2-72007dd69467"],
+Cell[CellGroupData[{
+Cell[4971, 123, 206, 3, 50, "Code",ExpressionUUID->"1432f5eb-5c39-4e4f-a7af-c701acbbdfd6"],
+Cell[5180, 128, 198, 3, 32, "Output",ExpressionUUID->"fe7a141e-740f-4e94-a6ed-e10dd39275b4"]
+}, Open  ]],
+Cell[5393, 134, 2185, 63, 188, "Text",ExpressionUUID->"6e356026-bc69-4aba-a941-894c1df42edd"],
+Cell[CellGroupData[{
+Cell[7603, 201, 485, 7, 44, "Subsubsection",ExpressionUUID->"e9bafe98-1b98-41e6-9de8-dd7016b842ea"],
+Cell[CellGroupData[{
+Cell[8113, 212, 241, 4, 28, "Input",ExpressionUUID->"1360d3ac-5ec1-41c2-8e5b-af76a4666c60"],
+Cell[8357, 218, 149, 2, 32, "Output",ExpressionUUID->"f3a5c692-1eab-4616-b63f-37db03302767"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8579, 228, 154, 3, 67, "Section",ExpressionUUID->"ee058cfd-c40b-4763-8d07-7a35575b7b25"],
+Cell[CellGroupData[{
+Cell[8758, 235, 206, 4, 53, "Subsection",ExpressionUUID->"2e133c2a-5799-49c9-9811-6352d5a3de73"],
+Cell[8967, 241, 260, 6, 34, "Text",ExpressionUUID->"2ec265a9-a4e6-49d3-9dd6-9b7cad8ca146"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9264, 252, 167, 3, 53, "Subsection",ExpressionUUID->"aee5c91e-8771-4061-ad36-466d9110806d"],
+Cell[9434, 257, 3846, 118, 282, "Text",ExpressionUUID->"9fc5d5af-f134-4269-8a32-0085ac888fbc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13317, 380, 163, 3, 53, "Subsection",ExpressionUUID->"7a95be2a-301c-4663-9d8b-9e4971f2aaa8"],
+Cell[CellGroupData[{
+Cell[13505, 387, 243, 4, 28, "Input",ExpressionUUID->"f0a2da8e-61ff-40a2-8291-96adfca392b9"],
+Cell[13751, 393, 149, 2, 32, "Output",ExpressionUUID->"a74ad3a3-5f75-41ef-8b36-8b2060b60141"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13961, 402, 155, 3, 67, "Section",ExpressionUUID->"238adfc1-144b-4443-b311-08fd1333f06a"],
+Cell[CellGroupData[{
+Cell[14141, 409, 155, 3, 53, "Subsection",ExpressionUUID->"19f9c3be-ea8a-4e32-9b4c-75eaee6f0467"],
+Cell[14299, 414, 293, 7, 34, "Text",ExpressionUUID->"732d2500-8110-4523-9d7c-0ea366a4e6a0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14629, 426, 167, 3, 53, "Subsection",ExpressionUUID->"f0594f94-0fdb-433d-809b-46e5c04aa5a4"],
+Cell[14799, 431, 4898, 144, 394, "Text",ExpressionUUID->"55655a08-5be5-42bf-be5a-c8b70175173f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19734, 580, 156, 3, 53, "Subsection",ExpressionUUID->"27cfa466-23f2-40a3-ac79-33f6304fd92c"],
+Cell[19893, 585, 606, 18, 75, "Text",ExpressionUUID->"a6ec934a-5f1b-41d4-9f75-89a04a20261b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20536, 608, 216, 4, 53, "Subsection",ExpressionUUID->"9e16d57c-2309-42d6-b7a7-af37ceb67e5b"],
+Cell[CellGroupData[{
+Cell[20777, 616, 687, 19, 28, "Input",ExpressionUUID->"f92c32df-e462-4a5c-b469-fc4906ed0fbd"],
+Cell[21467, 637, 431, 12, 32, "Output",ExpressionUUID->"b469ead5-e196-4d44-99fe-dbd6f0326441"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21959, 656, 155, 3, 67, "Section",ExpressionUUID->"7bf82bdd-4ec8-4682-ba5f-9fe81976e6b4"],
+Cell[CellGroupData[{
+Cell[22139, 663, 159, 3, 53, "Subsection",ExpressionUUID->"7b10f105-eb59-422d-af6b-5d5d60453920"],
+Cell[22301, 668, 628, 13, 34, "Text",ExpressionUUID->"728b468b-6c6a-44c4-8097-ae4835b37df1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22966, 686, 169, 3, 53, "Subsection",ExpressionUUID->"5fdcf520-bf46-4be2-89ec-c871dff29f81"],
+Cell[CellGroupData[{
+Cell[23160, 693, 153, 3, 44, "Subsubsection",ExpressionUUID->"374c8739-e10f-4b2e-8b7f-66f9a319e245"],
+Cell[23316, 698, 2770, 69, 496, "Text",ExpressionUUID->"7b9d3865-1b4f-47be-98f1-af3285786f3d"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26135, 773, 163, 3, 53, "Subsection",ExpressionUUID->"177070d3-c967-4fcb-ab81-ceb62b5cf71e"],
+Cell[CellGroupData[{
+Cell[26323, 780, 208, 3, 50, "Code",ExpressionUUID->"e9ddb4bf-08ea-4e13-b407-118028e5bcb4"],
+Cell[26534, 785, 152, 2, 32, "Output",ExpressionUUID->"358ac79f-b74e-4cc0-a162-8ed05e2afc1e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26723, 792, 153, 3, 44, "Subsubsection",ExpressionUUID->"7b9d29cc-33e6-43d4-93a0-ecc0fada93fb"],
+Cell[26879, 797, 240, 7, 78, "Text",ExpressionUUID->"bdbd4d89-b3d2-4bc9-894d-1b7f50f84e9b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27180, 811, 155, 3, 67, "Section",ExpressionUUID->"199bc690-c3a5-4e4c-aa0b-f83b4725bfb7"],
+Cell[CellGroupData[{
+Cell[27360, 818, 154, 3, 53, "Subsection",ExpressionUUID->"ebec44af-176a-4b5d-97e7-0ac44bdd2e88"],
+Cell[27517, 823, 607, 11, 56, "Text",ExpressionUUID->"d1e3b39d-7e40-4f82-9e17-7142db674d67"]
+}, Open  ]],
+Cell[28139, 837, 169, 3, 53, "Subsection",ExpressionUUID->"94e833dc-6eb4-4be7-9a87-b1c5a2b3a75b"],
+Cell[CellGroupData[{
+Cell[28333, 844, 152, 3, 37, "Subsection",ExpressionUUID->"e4411eaa-d558-4865-ab98-d22195c2ab85"],
+Cell[28488, 849, 1761, 32, 210, "Text",ExpressionUUID->"270d6822-448b-475e-a745-6e0eaa5aa72e"],
+Cell[CellGroupData[{
+Cell[30274, 885, 242, 4, 50, "Code",ExpressionUUID->"7e5fb250-0c91-4c79-8a76-892f47adc562"],
+Cell[30519, 891, 175, 2, 32, "Output",ExpressionUUID->"0294f1df-d29a-4921-a251-323b5a0488aa"]
+}, Open  ]],
+Cell[30709, 896, 1364, 27, 430, "Text",ExpressionUUID->"7fc6f2f9-8247-4757-a385-71146aa8ccc7"],
+Cell[CellGroupData[{
+Cell[32098, 927, 254, 4, 28, "Input",ExpressionUUID->"6cc47f33-c9b2-47c3-9d40-c8e067e1083e"],
+Cell[32355, 933, 150, 2, 32, "Output",ExpressionUUID->"30f3b7a4-b059-4eed-8f40-5c2b78e9ce74"]
+}, Open  ]],
+Cell[32520, 938, 180, 3, 34, "Text",ExpressionUUID->"c7488051-741b-4cdf-b6f7-776511472a6f"],
+Cell[CellGroupData[{
+Cell[32725, 945, 255, 4, 28, "Input",ExpressionUUID->"fabca51d-7c7b-432d-85e0-bae5ba15964b"],
+Cell[32983, 951, 148, 2, 32, "Output",ExpressionUUID->"2ddaff7f-caea-43af-a3e9-03f623c3573c"]
+}, Open  ]],
+Cell[33146, 956, 167, 3, 34, "Text",ExpressionUUID->"366d7c50-3b46-4f30-bee6-33266220a887"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33350, 964, 163, 3, 53, "Subsection",ExpressionUUID->"21a38839-74a6-49f0-99b0-66943cd180c1"],
+Cell[CellGroupData[{
+Cell[33538, 971, 415, 8, 87, "Code",ExpressionUUID->"eee751d8-3c2e-489f-881c-45b2043fa9f9"],
+Cell[33956, 981, 150, 2, 32, "Output",ExpressionUUID->"591d6426-82cd-42c8-8b20-82acc96e8bc0"],
+Cell[34109, 985, 149, 2, 32, "Output",ExpressionUUID->"fd1ca0fd-4b41-4dd8-a6ac-b262bad701dc"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34307, 993, 150, 3, 53, "Subsection",ExpressionUUID->"c5deb23c-496f-435b-8dcf-367b5682b3b6"],
+Cell[34460, 998, 914, 16, 100, "Text",ExpressionUUID->"f85d5f47-01f3-47c9-8d8d-41398e7a82d2"],
+Cell[35377, 1016, 71, 0, 34, "Text",ExpressionUUID->"fafb3e16-8d89-4f4d-a58b-9603a99c4bc4"],
+Cell[35451, 1018, 228, 8, 78, "Text",ExpressionUUID->"7cde68ff-5113-42b8-b434-e9ab568aa8d6"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35728, 1032, 154, 3, 67, "Section",ExpressionUUID->"33bde729-c363-4bf3-bb61-c607522b183b"],
+Cell[CellGroupData[{
+Cell[35907, 1039, 155, 3, 53, "Subsection",ExpressionUUID->"4d7790a3-8324-414d-be1c-267c53ab9dbb"],
+Cell[36065, 1044, 545, 10, 56, "Text",ExpressionUUID->"1f274950-2b24-4a90-838b-49c2f8eacdd0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36647, 1059, 172, 3, 53, "Subsection",ExpressionUUID->"7db0a097-6b11-4b45-8d5b-2318473a1924"],
+Cell[CellGroupData[{
+Cell[36844, 1066, 163, 3, 44, "Subsubsection",ExpressionUUID->"bb70d754-ad41-4704-8ba1-e1c7afddaa2d"],
+Cell[CellGroupData[{
+Cell[37032, 1073, 1813, 56, 303, "Code",ExpressionUUID->"83682f06-40fb-464b-811f-8facee57f149"],
+Cell[CellGroupData[{
+Cell[38870, 1133, 295, 8, 24, "Print",ExpressionUUID->"f03f951e-cc55-4fd2-a502-0d72bfc85fa8"],
+Cell[39168, 1143, 294, 8, 24, "Print",ExpressionUUID->"058c6108-c7bc-408c-a21e-ab9bce51634d"],
+Cell[39465, 1153, 295, 8, 24, "Print",ExpressionUUID->"7770daaa-4f48-4caf-a5fc-92aa9c7fc040"],
+Cell[39763, 1163, 303, 8, 24, "Print",ExpressionUUID->"468f9fe8-a51d-456b-9d7d-38a13eebef10"],
+Cell[40069, 1173, 353, 9, 24, "Print",ExpressionUUID->"7edd5fb7-c3bc-441b-aaf9-4d4f9c33c17e"],
+Cell[40425, 1184, 521, 14, 24, "Print",ExpressionUUID->"aac86b00-c10d-4010-b0b8-9af94a959bdd"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41007, 1205, 163, 3, 45, "Subsubsection",ExpressionUUID->"63187e46-9a09-4301-bc46-bd14c190277c"],
+Cell[CellGroupData[{
+Cell[41195, 1212, 1478, 44, 262, "Code",ExpressionUUID->"6a4439dc-1a5a-4858-a6b3-e8e80e51d3b5"],
+Cell[CellGroupData[{
+Cell[42698, 1260, 597, 19, 24, "Print",ExpressionUUID->"94b7e647-4b69-4947-a3e0-ec6e56311e73"],
+Cell[43298, 1281, 303, 8, 24, "Print",ExpressionUUID->"212ef141-fe8b-4c3c-8c38-08295fa605ea"],
+Cell[43604, 1291, 345, 9, 24, "Print",ExpressionUUID->"fb5eef2e-74f3-4461-b508-d9c09b736d72"]
+}, Open  ]]
+}, Open  ]],
+Cell[43976, 1304, 180, 4, 30, "Input",ExpressionUUID->"1ef7db8b-6cf2-4dab-81a0-008cb3b29758"],
+Cell[44159, 1310, 150, 2, 30, "Input",ExpressionUUID->"b9d80cf9-c9eb-493a-9511-9924bc4a4be0"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44370, 1319, 277, 5, 67, "Section",ExpressionUUID->"17f39cd7-0deb-4c25-b527-14223b2a9cd9"],
+Cell[44650, 1326, 302, 7, 35, "Text",ExpressionUUID->"42275ee3-1dc8-4a37-98a3-80c5edecff95"],
+Cell[CellGroupData[{
+Cell[44977, 1337, 441, 9, 25, "ItemParagraph",ExpressionUUID->"a8641d47-1270-4ed9-97ae-c36e46a99611"],
+Cell[45421, 1348, 566, 12, 25, "ItemParagraph",ExpressionUUID->"3b862922-1365-4dd9-aec6-33d4499207c4"],
+Cell[45990, 1362, 300, 5, 25, "ItemParagraph",ExpressionUUID->"adb0601e-63f7-4b34-aec6-f7c2ef05c106"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
