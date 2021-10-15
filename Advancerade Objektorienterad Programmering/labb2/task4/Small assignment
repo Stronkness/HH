@@ -1,0 +1,30 @@
+
+TASK 9
+Framework is basically a form of structure with how to structure up where everything will be.
+Like where everything should be put in the GUI and where everything is put.
+
+What classes are part of the framework?
+- Presenter & ImagePresenter
+
+What does the application programmer need to do to write a complete application?
+- If it's a application the programmer need to know where to position everything correctly so the for example the buttons
+and the images doesn't look too crooked or that they for some reason staple on each other. As a application need to look
+rather good an smooth in the GUI which is a big part of the application. But exactly WHAT the programmer need to write is a 
+question of what kind of application it will be. But if we follow this example in the link we got to this task
+is that we need to create some form of textfield and imagefield with buttons placed in north, south, east and west
+so we can control what happends in the application, in this task its a presenter which will slide through pictures and
+print out the text associated to the picture. So basically the programmer need to know how to control what the buttons have 
+to do and where they should be placed, and also where the textfield and imagefield should be placed and how they will work 
+with the specified application. Also how showText and showImage will be used to the textfield and the imagefield.
+
+
+TASK 10
+What classes did YOU define to specialize the framework?
+- Menu
+- ImageComponent
+- textcomponent
+- display
+
+Menu is the main in the program. ImageComponent basically creates the image and paints it on the display. Textcomponent does the same as ImageComponent 
+but works instead with the JTextField with the display, it takes the text out of the textfile and inserts it in the arraylist at a designated position.
+Display is the place where the display is created and where everything happends to the display.
