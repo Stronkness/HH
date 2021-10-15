@@ -1,0 +1,139 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[framed]{mcode}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor, graphicx}
+
+
+\title{Matlab Exercise 2 2018}
+\author{Linnéa Olsson & André Frisk}
+\date{October 2018}
+\begin{document}\maketitle\hrulefill\vs
+
+\maketitle
+
+\section{Abstract}
+\begin{center}
+    This laboratory reports main focus lies within getting us familiar with the MATLAB environment. This is achieved through asking us to write two different scripts. In e2-1 the script require two arguments in the input so that the script treats the arguments so it can handle right sided triangles (as the legs). With this the script assumes it's a right sided triangle. In e2-2 the script checks measure, dimensions and checks each element in the input that it does have a numeric value.  
+
+$\displaystyle 
+C=\sqrt{a^2+b^2}
+$
+
+$
+
+$
+
+$
+A=\sqrt{s(s-a)(s-b)(s-c)}  \cite{Heron}
+$
+
+\end{center}
+
+\section{Introduction}
+The goal with this laboratory exercise was to learn how to make functions and matrices. The exercise was mostly about doing various operations, such as calculating the area of an triangle and measuring the perimeter and the variance. Another goal with this laboratory exercise was to learn how to generate an specific error message in MATLAB.
+
+\subsection{Purpose}
+The main purpose with this laboratory is to learn more of MATLAB as the engineer students that performed this lab are still beginners. An introduction to calcTriArea (task 1) were made so MATLAB could calculate the area of the triangle and so the students can gather more knowledge how MATLAB can process different scripts. In task 2 there are also new commands introduced to the students.
+
+
+\section{Method}
+\subsection{Tools/Material}
+
+\begin{itemize}
+    \item {\setlength{\parindent}{0cm}
+          A computer fitting for the task
+          }
+    \item $\LaTeX$ editor, in this lab Overleaf was used
+    \item MATLAB
+    \item e2v34tex.pdf (\href{https://hh.blackboard.com/bbcswebdav/pid-210908-dt-content-rid-1642034_1/courses/5719/e2v34tex.pdf}{\color{blue}{link}})
+\end{itemize}
+
+
+\subsection{Implementation}
+
+{\setlength{\parindent}{0cm}
+Following code is for Task 1:
+}
+
+\\
+\begin{lstlisting}
+% File created by André Frisk & Linnéa Olsson
+
+function [A, P] = e2_1(a,b,c)			 
+
+if nargin == 2								
+    c = sqrt(a^2+b^2);												
+elseif nargin > 3 || nargin < 2				  
+    error('need 2 or 3 inputs to work');	
+end											
+
+P = (a+b+c);
+s = P/2;
+A = sqrt(s*(s-a)*(s-b)*(s-c));
+\end{lstlisting}
+
+\newpage
+{\setlength{\parindent}{0cm}
+Following code is for Task 2:
+}
+\begin{lstlisting}
+
+%Created by Linnéa Olsson and André Frisk
+function [varAlongColumns, varAlongRows, varTotal] = e2_2(A)
+
+if nargin > 1 || nargin < 1
+    error('The function only takes one input')
+else
+    dim = ndims(A);
+end
+
+if dim < 2 || dim > 2
+    error('The input can only be a matrix with two dimensions')
+end
+    
+
+    if ~isnumeric(A)
+        error('Each element of the vector can only be numeric')
+    end
+
+    varAlongColumns = var(A,1,1);
+    varAlongRows = var(A,1,2);
+    varTotal = mean(mean(A-(mean(mean(A)))).^2);
+end
+\end{lstlisting}
+
+\section{Result}
+\subsection{Task 1}
+To assure the script for Task 1 works the following tests were made in MATLAB with the script:
+
+
+\begin{lstlisting}
+a = 3; b = 4; c = 5;
+[A1,P1] = calcTriArea(a,b,c)
+[A2,P2] = e2_1(a,b,c)
+[A3,P3] = e2_1(a,b)
+\end{lstlisting}
+
+\begin{lstlisting}
+A1 == A2 %statement gives value 1, if true, 0 if false
+P1 == P2
+A1 == A3
+P1 == P3
+
+\end{lstlisting}
+
+\subsection{Task 2}
+After the code was written, the code was tested. The functions and answers in the code were working as they should. The code is written in a way that will tell us that when a variable or more than one input is found in the matrix an error message will appear. 
+
+
+
+\section{Conclusion}
+The team members managed to write two functional scripts for this task and everything works as described in the assignment.
+
+\bibliography{mybib}
+\bibliographystyle{plain}
+
+\end{document}
